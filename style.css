@@ -1,0 +1,52 @@
+:root {
+    --accent-color: #ffebfc; 
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+
+
+
+
+.fab{
+    height: 72px;
+    width: 72px;
+    background-color: var(--accent-color);
+    
+
+    display: flex;
+
+    padding: 24px;
+    gap: 24px;
+    border-radius: 24px;
+
+    overflow: hidden;
+    transition: width 300ms;
+}
+
+.fab.active {
+    width: 216px;
+
+}
+
+.plus {
+    transition: 200ms;
+
+}
+
+.fab.active .plus {
+    transform:   rotate(45deg);
+}
+
+.item {
+    display: none;
+}
+
+.fab.active .item {
+    display: inline;
+}
